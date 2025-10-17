@@ -14,7 +14,13 @@ from .config import (
     NetworkTariffsConfig,
     SolarPVConfig,
 )
-from ..organized_data_loader import OrganizedDataLoader
+import sys
+from pathlib import Path
+
+# Add parent directory to path for imports
+sys.path.append(str(Path(__file__).parent.parent))
+
+from organized_data_loader import OrganizedDataLoader
 
 
 def _is_in_window(ts: pd.Timestamp, start_hm: str, end_hm: str) -> bool:
