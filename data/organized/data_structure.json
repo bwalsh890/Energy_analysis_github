@@ -1,0 +1,132 @@
+{
+    "description": "Organized NEM 5-minute RRP data for battery storage analysis",
+    "created": "2025-10-16T13:22:33.873006",
+    "data_location": "data/organized/",
+    "regions": [
+        "NSW1",
+        "VIC1",
+        "QLD1",
+        "SA1"
+    ],
+    "time_period": "2020-01-01 to 2025-06-30",
+    "resolution": "5-minute",
+    "price_column": "price_aud_per_mwh",
+    "files": {
+        "NSW1": {
+            "file": "data\\organized\\NSW1_rrp_2020_2025.parquet",
+            "rows": 104860,
+            "start_date": "2021-01-01 00:05:00",
+            "end_date": "2021-12-31 00:00:00",
+            "size_mb": 1.5793800354003906
+        },
+        "VIC1": {
+            "file": "data\\organized\\VIC1_rrp_2020_2025.parquet",
+            "rows": 26220,
+            "start_date": "2024-10-01 00:05:00",
+            "end_date": "2024-12-31 00:00:00",
+            "size_mb": 0.3722562789916992
+        },
+        "QLD1": {
+            "file": "data\\organized\\QLD1_rrp_2020_2025.parquet",
+            "rows": 106168,
+            "start_date": "2020-01-01 00:05:00",
+            "end_date": "2020-12-31 00:00:00",
+            "size_mb": 1.5270099639892578
+        },
+        "SA1": {
+            "file": "data\\organized\\SA1_rrp_2020_2025.parquet",
+            "rows": 106168,
+            "start_date": "2020-01-01 00:05:00",
+            "end_date": "2020-12-31 00:00:00",
+            "size_mb": 1.7355146408081055
+        }
+    },
+    "usage": {
+        "load_data": "pd.read_parquet('data/organized/{region}_rrp_2020_2025.parquet')",
+        "example": "df = pd.read_parquet('data/organized/NSW1_rrp_2020_2025.parquet')"
+    },
+    "NSW1": {
+        "file": "data\\organized\\NSW1_rrp_2020_2025.parquet",
+        "start_date": "2020-01-01T00:00:00",
+        "end_date": "2025-06-30T00:00:00",
+        "rows": 582579,
+        "size_mb": 7.84,
+        "years": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+        ],
+        "avg_price": 111.54377848248906,
+        "price_range": "$-1000.00 to $17500.00"
+    },
+    "QLD1": {
+        "file": "data\\organized\\QLD1_rrp_2020_2025.parquet",
+        "start_date": "2020-01-01T00:05:00",
+        "end_date": "2025-06-30T00:00:00",
+        "rows": 582291,
+        "size_mb": 7.73,
+        "years": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+        ],
+        "avg_price": 108.58303765490108,
+        "price_range": "$-1000.00 to $17500.00"
+    },
+    "VIC1": {
+        "file": "data\\organized\\VIC1_rrp_2020_2025.parquet",
+        "start_date": "2020-01-01T00:00:00",
+        "end_date": "2025-06-30T00:00:00",
+        "rows": 582579,
+        "size_mb": 7.93,
+        "years": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+        ],
+        "avg_price": 77.23260076468598,
+        "price_range": "$-1000.00 to $17500.00"
+    },
+    "SA1": {
+        "file": "data\\organized\\SA1_rrp_2020_2025.parquet",
+        "start_date": "2020-01-01T00:05:00",
+        "end_date": "2025-06-30T00:00:00",
+        "rows": 582291,
+        "size_mb": 8.2,
+        "years": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+        ],
+        "avg_price": 88.01778414531566,
+        "price_range": "$-1000.00 to $17500.00"
+    },
+    "5.2MW_tracking_solar_Hay2": {
+        "file": "data\\organized\\5.2MW_tracking_solar_Hay2_1990.parquet",
+        "system_name": "5.2MW tracking solar Hay2",
+        "system_capacity_mw": 5.2,
+        "data_type": "solar_generation",
+        "period": "1990-01-01 to 1990-12-31",
+        "resolution": "hourly",
+        "total_energy_mwh": 11524.936,
+        "total_energy_gwh": 11.524936,
+        "max_power_mw": 5.087,
+        "capacity_factor_percent": 25.30061468212153,
+        "hours_with_generation": 4202,
+        "total_hours": 8760,
+        "data_source": "Solar PV tracking 5.2MW.csv",
+        "processed_date": "2025-10-16 19:53:46"
+    }
+}
