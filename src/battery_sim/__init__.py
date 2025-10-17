@@ -10,9 +10,10 @@ from .config import (
     OperationalConstraints,
     FinancialConfig,
     ReportingConfig,
-    ValidationConfig
+    ValidationConfig,
+    SolarPVConfig
 )
-from .sim import run_simulation
+from .sim_hybrid import run_simulation_hybrid
 
 __all__ = [
     "BatteryConfig",
@@ -27,7 +28,8 @@ __all__ = [
     "FinancialConfig",
     "ReportingConfig",
     "ValidationConfig",
-    "run_simulation",
+    "SolarPVConfig",
+    "run_simulation_hybrid",
 ]
 
 
