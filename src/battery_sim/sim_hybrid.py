@@ -14,7 +14,7 @@ from .config import (
     NetworkTariffsConfig,
     SolarPVConfig,
 )
-from src.organized_data_loader import OrganizedDataLoader
+from ..organized_data_loader import OrganizedDataLoader
 
 
 def _is_in_window(ts: pd.Timestamp, start_hm: str, end_hm: str) -> bool:
